@@ -1,0 +1,115 @@
+h1{
+    font-family: "Josefin Sans", serif;
+    color: white;
+
+}
+
+#profil{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 80px;
+    background-color: rgba(196, 182, 182, 0.24);
+    gap: 50px;
+}
+
+#profil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    margin-top: 40px;
+}
+
+#profil h3{
+    font-family: "Josefin Sans", serif;
+    font-size: 21pt;
+
+}
+
+#profil form{
+    font-family: "Josefin Sans", serif;
+}
+
+#profil label{
+    font-family: "Josefin sans", serif;
+}
+
+#nouvelle_photo{
+    font-family: "Josefin Sans", serif;
+    font-size: 12pt;
+    text-align: left;
+}
+#form_input{
+    font-family: "Josefin Sans", serif;
+    font-size: 12pt;
+    text-align: left;
+}
+
+#bio_artiste{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(8, 7, 7, 0.63);
+    color: white;
+    border-radius: 25px;
+    font-family: "Josefin Sans", serif;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+#bio_artiste button{
+    width: 160px;
+    height: 38px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #FAC94C;
+    font-family: "Josefin Sans", serif;
+    font-size: 17px;
+    cursor: pointer
+}
+
+#import_musique{
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(8, 7, 7, 0.63);
+    color: white;
+    border-radius: 25px;
+    font-family: "Josefin Sans", serif;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+#import_musique form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+#import_musique label{
+    font-size: 15pt;
+}
+
+#import_musique input{
+    width: 170px;
+  height: 25px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Josefin Sans", serif;
+}

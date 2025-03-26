@@ -1,0 +1,41 @@
+
+
+Ce script PHP a pour objectif de charger des feuilles de style CSS spécifiques en fonction du nom de la page actuelle. Voici une explication détaillée du fonctionnement du script :
+
+Définir le chemin des fichiers CSS :
+
+    Utilisation de la constante CSS_PATH pour définir le chemin où se trouvent les fichiers CSS. Ici, '/styles/' est défini comme le chemin des fichiers CSS.
+
+Identifier la page actuelle :
+
+    La variable $page utilise basename($_SERVER['PHP_SELF']) pour obtenir le nom de la page actuelle sans son extension .php. Par exemple, si l'URL est http://exemple.com/albums_ep_single.php, alors $page sera défini comme albums_ep_single.
+
+Vérifier le nom de la page et inclure la feuille de style appropriée :
+
+    Le script vérifie le nom de la page à l'aide de plusieurs instructions if et elseif. Si le nom de la page correspond à une valeur spécifique, il inclut le fichier CSS correspondant en utilisant une balise <link>.
+
+
+Explication du script PHP en diagramme de Flux: 
+
+                [Début]
+                    |
+        +----------------------+
+        |Définir la constante  |
+        |     CSS_PATH         |
+        +----------------------+
+                    |
+        +-----------------------+
+        |Identifier la page     |
+        |   actuelle (basename) |
+        +-----------------------+
+                    |
+        +-----------------------+
+        |Vérifier le nom de la  |
+        | page (if, elseif...)  |
+        +-----------------------+
+        /        |        \     ...
+  (albums_ep_single.php)  (artist_profile.php)   ...
+        /                    \     ...
+ [Inclure albums_ep]  [Inclure artist_profile]
+        |                    |
+      [Fin]                [Fin]
